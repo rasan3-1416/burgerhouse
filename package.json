@@ -1,0 +1,23 @@
+{
+  "name": "burgerweek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-tail-css": "tailwindcss -i ./src/css/tailwind.css -o ./assets/css/tailwind.css --watch",
+    "minify-tail-css": "tailwindcss -i ./src/tailwind.css -o ./assets/tailwind.css --watch --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasan3-1416/burgerweek.git"
+  },
+  "author": "Md. Rakib Hasan <md.rakibhasan3-1416@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasan3-1416/burgerweek/issues"
+  },
+  "homepage": "https://github.com/rasan3-1416/burgerweek#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
