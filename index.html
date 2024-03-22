@@ -3,30 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Remix Icon CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Burger Week</title>
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet" href="./assets/css/tailwind.css">
 </head>
 <body>
     <!-- start Header -->
-    <header class="fixed">
+    <header class="fixed z-fixed w-full h-header">
         <!-- start Nav -->
-        <nav>
-            <a class="" href="#">
-                <img src="./src/img/logo.png" alt="Burger House logo">
+        <nav class="container w-full h-full flex justify-between items-center">
+            <a href="index.html">
+                <img class="logo" src="./src/img/logo.png" alt="Burger House logo">
             </a>
+            <!-- Mobile Menu start -->
+            <div class="md:hidden fixed top-0 left-0 z-[53] w-full h-full bg-c-black/50 invisible opacity-0 dynamic-style:visible dynamic-style:opacity-100 transe-ease-l" id="mobile-overlay"></div>
+            <div class="md:hidden fixed top-0 -right-full dynamic-style:right-0 z-[54] w-[min(65vw,400px)] h-full bg-c-body transe-ease-l" id="menu">
+                <div class="h-full px-5 flex flex-col justify-between">
+                    <div class="h-[4rem] flex items-center">
+                        <a href="index.html">
+                            <img class="logo" src="./src/img/logo.png" alt="Burger Week logo">
+                        </a>
+                    </div>
+                    <div class="flex flex-col font-bebas text-[1.5rem]">
+                        <a class="py-3 text-c-title group transe-ease hover:text-c-alt-first hover:bg-c-black/10" href="">
+                            <span class="inline-block transe-ease group-hover:translate-x-4">Home</span>
+                        </a>
+                        <a class="py-3 text-c-title group transe-ease hover:text-c-alt-first hover:bg-c-black/10" href="">
+                            <span class="inline-block transe-ease group-hover:translate-x-4">Menu</span>
+                        </a>
+                        <a class="py-3 text-c-title group transe-ease hover:text-c-alt-first hover:bg-c-black/10" href="">
+                            <span class="inline-block transe-ease group-hover:translate-x-4">Our Story</span>
+                        </a>
+                        <a class="py-3 text-c-title group transe-ease hover:text-c-alt-first hover:bg-c-black/10" href="">
+                            <span class="inline-block transe-ease group-hover:translate-x-4">Contact Us</span>
+                        </a>
+                    </div>
+                    <div class="h-[4rem] flex items-center gap-x-2">
+                        <img class="w-[30px]" src="./src/img/delivery.png" alt="">
+                        <span class="font-bold text-[0.875rem] text-c-title">Express Delivery +1 234 567 890</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu end -->
+
+            <!-- Desktop Menu start -->
+            <div class="hidden md:block ">
+                <div class="flex justify-end items-center gap-x-2 mb-4">
+                    <img class="w-[30px]" src="./src/img/delivery.png" alt="">
+                    <span class="font-bold text-[0.875rem] text-c-title">Express Delivery +1 234 567 890</span>
+                </div>
+
+                <div class="font-bebas text-[1.5rem] text-c-title flex gap-x-9">
+                    <a class="transe-ease hover:text-c-alt-first" href="">Home</a>
+                    <a class="transe-ease hover:text-c-alt-first" href="">Menu</a>
+                    <a class="transe-ease hover:text-c-alt-first" href="">Our Story</a>
+                    <a class="transe-ease hover:text-c-alt-first" href="">Contact Us</a>
+                </div>
+            </div>
+            <!-- Desktop Menu end -->
+
+            <!-- Hamburger Menu Icon -->
+            <button class="md:hidden hamburger-btn z-[55]" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
         <!-- end Nav -->
     </header>
     <!-- end Header -->
 
-    <!-- start Main -->
-    <main class="overflow-hidden">
-        <!-- start Home -->
-        <section class="w-full h-[100vh] bg-home bg-no-repeat bg-cover"></section>
-        <!-- end Home -->
-    </main>
-    <!-- End Main -->
+    
+
+    
 
     <!-- Main JS link -->
     <script src="./src/js/main.js"></script>
