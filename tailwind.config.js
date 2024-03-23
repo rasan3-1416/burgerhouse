@@ -30,6 +30,7 @@ module.exports = {
     colors: {
       'transparent': 'transparent',
       'c-first': 'hsl(var(--first-color) / <alpha-value>)',
+      'c-first-alt': 'hsl(var(--first-alt-color) / <alpha-value>)',
       'c-body': 'hsl(var(--body-color) / <alpha-value>)',
       'c-title': 'hsl(var(--title-color) / <alpha-value>)',
       'c-prime': 'hsl(var(--text-color) / <alpha-value>)',
@@ -51,7 +52,8 @@ module.exports = {
     plugin(function({ addUtilities }) {
       addUtilities ({
         // Responsive Typography
-        '.fs-biggest': {fontSize:'clamp(2.25rem, 8vw, 5rem)'},
+        '.fs-biggest': {fontSize:'clamp(4rem, 7vw, 7.25rem)'},
+        '.fs-biggest-alt': {fontSize:'clamp(2rem, 7vw, 3.5rem)'},
         '.fs-heading': {fontSize: 'var(--fs-heading)'},
         '.fs-xxl': {fontSize: 'var(--fs-xxl)'},
         '.fs-xl': {fontSize: 'var(--fs-xl)'},

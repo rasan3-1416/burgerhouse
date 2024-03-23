@@ -12,6 +12,7 @@
         --font-alfa: "Alfa Slab One", serif;
         /* Custom Colors Palletes Variable */
         --first-color: 42 100% 60%;
+        --first-alt-color: 41 97% 86%;
         --body-color: 0 0% 100%;
         --title-color: 23 71% 15%;
         --text-color: 180 1% 27%;
@@ -53,7 +54,7 @@
             @apply fs-lg leading-5 bg-c-body text-c-prime;
         }
         h1,h2 {
-            @apply font-alfa text-c-title font-bold
+            @apply font-alfa text-c-title font-bold uppercase
         }
     }
 }
@@ -81,6 +82,18 @@
                 }
             }
         }
+    }
+
+    /* Section Styles */
+    .section {
+        @apply pt-16 pb-4 lg:pt-24 xl:pt-32 xl:pb-8;
+    }
+    /* Shadow Classes */
+    .text-solid-sh {
+        text-shadow: 4px 3px 0 hsl(var(--first-alt-color));
+    }
+    .outer-item-sh {
+        @apply absolute bottom-[-50px] left-[5%] w-[90%] h-[20px] bg-c-black rounded-[50%] blur-md
     }
 }
 
