@@ -37,6 +37,7 @@ module.exports = {
       'c-first': 'hsl(var(--first-color) / <alpha-value>)',
       'c-alt-first': 'hsl(var(--alt-first-color) / <alpha-value>)',
       "c-black": "hsl(var(--black) / <alpha-value>)",
+      "c-white": "hsl(var(--white) / <alpha-value>)",
     },
     // Custom Breakpoints
     screens: {

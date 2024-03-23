@@ -18,6 +18,7 @@
         --text-color: 180 1% 27%;
         --alt-first-color: 0 78% 49%;
         --black: 0 0% 0%;
+        --white: 0 0% 100%;
         /* Responsive Typography */
         --fs-heading: 1.575rem;
         --fs-xxl: 1.25rem;
@@ -55,6 +56,9 @@
         }
         h1,h2 {
             @apply font-alfa text-c-title font-bold uppercase
+        }
+        h3,h4,a {
+            @apply uppercase
         }
     }
 }
@@ -94,6 +98,13 @@
     }
     .outer-item-sh {
         @apply absolute bottom-[-50px] left-[5%] w-[90%] h-[20px] bg-c-black rounded-[50%] blur-md
+    }
+    /* Overlay Classes */
+    .dark-overlay {
+        @apply relative;
+        &::after {
+            @apply content-[''] absolute top-0 left-0 w-full h-full bg-c-black/50 transe-ease
+        }
     }
 }
 
