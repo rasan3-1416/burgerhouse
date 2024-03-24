@@ -66,12 +66,12 @@
 @layer components {
     /* Reusable Classes */
     .logo {
-        @apply w-[140px] sm:w-[160px] md:w-[200px]
+        @apply w-[140px] xm:w-[110px] sm:w-[160px] md:w-[200px]
     }
     .hamburger-btn {
         @apply grid gap-y-1 transe-ease-l;
         span {
-            @apply block w-[30px] h-[3px] bg-c-title transe-ease-l;
+            @apply block w-[30px] h-[3px] xm:w-[22px] bg-c-title transe-ease-l;
         }
         &.dynamic-style {
             span {

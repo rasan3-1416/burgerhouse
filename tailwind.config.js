@@ -16,7 +16,10 @@ module.exports = {
       },
       // Background images URL
       backgroundImage: {
-        'home': "url('../../src/img/home-bg.png')"
+        'home': "url('../../src/img/home-bg.png')",
+        'plater-1': "url('../../src/img/plater-1.jpg')",
+        'plater-2': "url('../../src/img/plater-2.jpg')",
+        'plater-3': "url('../../src/img/plater-3.jpg')",
       },
       // Custom Z index value
       zIndex: {

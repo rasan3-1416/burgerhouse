@@ -712,6 +712,12 @@ video {
   width: 140px;
 }
 
+@media (max-width: 320px) {
+  .logo {
+    width: 110px;
+  }
+}
+
 @media (min-width: 576px) {
   .logo {
     width: 160px;
@@ -743,6 +749,11 @@ video {
   }
   span {
     transition: 0.4s ease-in-out;
+  }
+  @media (max-width: 320px) {
+    span {
+      width: 22px;
+    }
   }
   &.dynamic-style {
     span {
@@ -868,16 +879,16 @@ video {
   z-index: 52;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -912,15 +923,6 @@ video {
   height: 100%;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.max-h-full {
-  max-height: 100%;
-}
-
 .w-\[30px\] {
   width: 30px;
 }
@@ -935,10 +937,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .flex-col {
@@ -1013,8 +1011,24 @@ video {
   background-image: url('../../src/img/home-bg.png');
 }
 
+.bg-plater-1 {
+  background-image: url('../../src/img/plater-1.jpg');
+}
+
+.bg-plater-2 {
+  background-image: url('../../src/img/plater-2.jpg');
+}
+
+.bg-plater-3 {
+  background-image: url('../../src/img/plater-3.jpg');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -1059,12 +1073,12 @@ video {
   font-weight: 700;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -1147,22 +1161,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group:hover .group-hover\:scale-105 {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:text-c-first {
-  --tw-text-opacity: 1;
-  color: hsl(var(--first-color) / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-c-alt-first {
-  --tw-text-opacity: 1;
-  color: hsl(var(--alt-first-color) / var(--tw-text-opacity));
-}
-
 .dynamic-style.dynamic-style\:visible {
   visibility: visible;
 }
@@ -1230,11 +1228,6 @@ video {
 
   .md\:h-full {
     height: 100%;
-  }
-
-  .md\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
   }
 
   .md\:w-\[600px\] {
