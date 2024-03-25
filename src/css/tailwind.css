@@ -11,16 +11,15 @@
         --font-bebas: "Bebas Neue", sans-serif;
         --font-alfa: "Alfa Slab One", serif;
         /* Custom Colors Palletes Variable */
-        --first-color: 42 100% 60%;
-        --first-alt-color: 41 97% 86%;
-        --body-color: 0 0% 100%;
-        --title-color: 23 71% 15%;
-        --text-color: 180 1% 27%;
-        --alt-first-color: 0 78% 49%;
+        --first-color: 42 100% 60%; /*yellow*/
+        --first-color-alt: 0 78% 49%; /*red*/
+        --body-color: 0 0% 100%; /*white*/
+        --title-color: 23 71% 15%; /*redish*/
+        --title-color-alt: 41 97% 86%; /*yellowish orange*/
+        --text-color: 180 1% 27%; /*gray*/
         --black: 0 0% 0%;
         --white: 0 0% 100%;
         /* Responsive Typography */
-        --fs-heading: 1.575rem;
         --fs-xxl: 1.25rem;
         --fs-xl: 1.125rem;
         --fs-lg: 1rem;
@@ -29,7 +28,6 @@
         --fs-xm: 0.75rem;
         --fs-xxm: 0.65rem;
         @screen xm {
-            --fs-heading: 1.5rem;
             --fs-xxl: 1.125rem;
             --fs-xl: 1rem;
             --fs-lg: 0.875rem;
@@ -39,7 +37,6 @@
             --fs-xxm: 0.5rem;
         }
         @screen sm {
-            --fs-heading: 2rem;
             --fs-xxl: 1.375rem;
             --fs-xl: 1.25rem;
             --fs-lg: 1.125rem;
@@ -52,7 +49,7 @@
             @apply font-mont;
         }
         body {
-            @apply fs-lg leading-5 bg-c-body text-c-prime;
+            @apply fs-md leading-5 bg-c-body text-c-prime;
         }
         h1,h2 {
             @apply font-alfa text-c-title font-bold uppercase
@@ -92,20 +89,50 @@
     .section {
         @apply pt-16 pb-4 lg:pt-24 xl:pt-32 xl:pb-8;
     }
+    .section-subtitle {
+        @apply inline-block fs-sm font-bold text-c-title py-2 px-3 xm:py-1 xm:px-2 bg-c-first mb-5 xm:mb-3 sm:mb-8 md:mb-10
+    }
+    .section-title {
+        @apply fs-heading xm:text-[1.35rem] mb-6 sm:mb-8 lg:mb-10
+    }
+    /* Btn Styles */
+    .btn {
+        @apply px-5 py-4 fs-lg font-alfa font-bold tracking-wider transe-ease
+    }
+    .btn-first {
+        @apply text-c-body bg-c-first-alt;
+        &:hover {
+            @apply bg-c-first text-c-first-alt
+        }
+    }
     /* Shadow Classes */
     .text-solid-sh {
-        text-shadow: 4px 3px 0 hsl(var(--first-alt-color));
+        text-shadow: 4px 3px 0 hsl(var(--title-color-alt));
     }
     .outer-item-sh {
-        @apply absolute bottom-[-50px] left-[5%] w-[90%] h-[20px] bg-c-black rounded-[50%] blur-md
+        @apply inline-block w-[170px] h-[10px] bg-c-black rounded-[50%] blur-[9px]
     }
     /* Overlay Classes */
     .dark-overlay {
         @apply relative;
         &::after {
-            @apply content-[''] absolute top-0 left-0 w-full h-full bg-c-black/50 transe-ease
+            @apply content-[''] absolute top-0 left-0 w-full h-full bg-c-black/70 transe-ease
         }
     }
 }
 
 @layer utilities {}
+
+
+/* Burger Swiper Slider Styles */
+.swiper-pagination-bullet {
+    @apply w-[10px] h-[10px];
+}
+.swiper-pagination-bullet-active {
+@apply bg-c-first
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+  @apply blur-0 scale-110 !important
+}

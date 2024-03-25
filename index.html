@@ -10,12 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Burger Week</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet" href="./assets/css/tailwind.css">
 </head>
-<body>
+<body class="dynamic-style:overflow-hidden">
     <!-- start Header -->
-    <header class="fixed z-fixed w-full h-header transe-ease-l dynamic-style:bg-c-white dynamic-style:shadow-xl" id="header">
+    <header class="fixed z-fixed w-full h-header transe-ease-l md:dynamic-style:h-[5rem] dynamic-style:bg-c-white dynamic-style:shadow-xl" id="header">
         <!-- start Nav -->
         <nav class="container w-full h-full flex justify-between items-center">
             <a href="index.html">
@@ -31,16 +33,16 @@
                         </a>
                     </div>
                     <div class="flex flex-col font-bebas text-[1.5rem]">
-                        <a class="py-3 text-c-title group transe-ease hover:text-c-alt-first hover:bg-c-black/10" href="">
+                        <a class="py-3 text-c-title group transe-ease hover:text-c-first-alt hover:bg-c-black/10" href="#home">
                             <span class="inline-block transe-ease group-hover:translate-x-4">Home</span>
                         </a>
-                        <a class="py-3 text-c-title group transe-ease hover:text-c-alt-first hover:bg-c-black/10" href="">
+                        <a class="py-3 text-c-title group transe-ease hover:text-c-first-alt hover:bg-c-black/10" href="#menu">
                             <span class="inline-block transe-ease group-hover:translate-x-4">Menu</span>
                         </a>
-                        <a class="py-3 text-c-title group transe-ease hover:text-c-alt-first hover:bg-c-black/10" href="">
+                        <a class="py-3 text-c-title group transe-ease hover:text-c-first-alt hover:bg-c-black/10" href="#our-story">
                             <span class="inline-block transe-ease group-hover:translate-x-4">Our Story</span>
                         </a>
-                        <a class="py-3 text-c-title group transe-ease hover:text-c-alt-first hover:bg-c-black/10" href="">
+                        <a class="py-3 text-c-title group transe-ease hover:text-c-first-alt hover:bg-c-black/10" href="#contact-us">
                             <span class="inline-block transe-ease group-hover:translate-x-4">Contact Us</span>
                         </a>
                     </div>
@@ -54,16 +56,16 @@
 
             <!-- Desktop Menu start -->
             <div class="hidden md:block ">
-                <div class="flex justify-end items-center gap-x-2 mb-4">
+                <div class="flex justify-end items-center gap-x-2 mb-4 transe-ease dynamic-style:hidden" id="delivery-number">
                     <img class="w-[30px]" src="./src/img/delivery.png" alt="Delivery By Scooty">
                     <span class="font-bold text-[0.875rem] text-c-title">Express Delivery +1 234 567 890</span>
                 </div>
 
                 <div class="font-bebas text-[1.5rem] text-c-title flex gap-x-9">
-                    <a class="transe-ease hover:text-c-alt-first" href="#home">Home</a>
-                    <a class="transe-ease hover:text-c-alt-first" href="#menu">Menu</a>
-                    <a class="transe-ease hover:text-c-alt-first" href="#our story">Our Story</a>
-                    <a class="transe-ease hover:text-c-alt-first" href="#contact us">Contact Us</a>
+                    <a class="transe-ease hover:text-c-first-alt" href="#home">Home</a>
+                    <a class="transe-ease hover:text-c-first-alt" href="#menu">Menu</a>
+                    <a class="transe-ease hover:text-c-first-alt" href="#our-story">Our Story</a>
+                    <a class="transe-ease hover:text-c-first-alt" href="#contact-us">Contact Us</a>
                 </div>
             </div>
             <!-- Desktop Menu end -->
@@ -84,7 +86,7 @@
     <!-- start Main -->
     <main class="overflow-hidden">
         <!-- start Home -->
-        <section class="section md:h-[100vh] bg-home bg-no-repeat bg-cover" id="home">
+        <section class="section md:pt-0 md:pb-0 md:h-[100vh] bg-home bg-no-repeat bg-cover" id="home">
             <div class="container md:h-full md:flex md:items-center md:justify-between">
                 <div class="pt-24 md:pt-0">
                     <span class="uppercase text-[0.875rem] xm:text-[0.6rem] md:text-[1rem] lg:text-[1.25rem] font-bebas tracking-wider font-semibold text-c-title inline-block mb-4 xm:mb-2 md:mb-6 xxl:mb-8 p-2 xm:p-1 lg:p-3 border border-dashed border-c-title">
@@ -95,8 +97,8 @@
                         <span class="fs-biggest-alt block mt-6 sm:mt-8 md:mt-12 text-solid-sh">week</span>
                     </h1>
                 </div>
-                <div class="flex justify-center pb-8 md:pb-16">
-                    <img class="w-[400px] sm:w-[450px] md:w-[600px]" src="./src/img/home_banner-1.png" alt="Home Banner">
+                <div class="flex justify-center pb-8 md:pb-0">
+                    <img class="w-[400px] sm:w-[450px] md:w-[600px] lg:w-[650px]" src="./src/img/home_banner-1.png" alt="Home Banner">
                 </div>
             </div>
         </section>
@@ -108,23 +110,23 @@
                 <div class="grid gap-4 md:grid-cols-2">
                     <!-- Plater - 1 -->
                     <div class="group h-[150px] md:h-full bg-plater-1 bg-no-repeat bg-cover bg-center rounded-md overflow-hidden dark-overlay hover:after:invisible hover:after:opacity-0">
-                        <div class="absolute top-4 left-4 z-10 uppercase text-c-white">
-                            <span class="fs-md font-medium mb-2">try it today</span>
+                        <div class="absolute top-4 left-4 z-10 uppercase text-c-white transe-ease group-hover:text-c-first-alt">
+                            <span class="fs-md inline-block font-medium mb-2">try it today</span>
                             <h3 class="fs-xxl font-semibold">most popurlar burger</h3>
                         </div>
                     </div>
                     <div class="grid gap-y-4">
                         <!-- Plater - 2 -->
                         <div class="group h-[150px] bg-plater-2 bg-no-repeat bg-cover bg-center rounded-md overflow-hidden dark-overlay hover:after:invisible hover:after:opacity-0">
-                            <div class="absolute top-4 left-4 z-10 uppercase text-c-white">
-                                <span class="fs-md font-medium mb-2">try it today</span>
+                            <div class="absolute top-4 left-4 z-10 uppercase text-c-white transe-ease group-hover:text-c-first-alt">
+                                <span class="fs-md inline-block font-medium mb-2">try it today</span>
                                 <h3 class="fs-xxl font-semibold">more fun more taste</h3>
                             </div>
                         </div>
                         <!-- Plater - 3 -->
                         <div class="group h-[150px] bg-plater-3 bg-no-repeat bg-cover bg-center rounded-md overflow-hidden dark-overlay hover:after:invisible hover:after:opacity-0">
-                            <div class="absolute top-4 left-4 z-10 uppercase text-c-white">
-                                <span class="fs-md font-medium mb-2">try it today</span>
+                            <div class="absolute top-4 left-4 z-10 uppercase text-c-white transe-ease group-hover:text-c-first-alt">
+                                <span class="fs-md inline-block font-medium mb-2">try it today</span>
                                 <h3 class="fs-xxl font-semibold">fresh & chili</h3>
                             </div>
                         </div>
@@ -133,9 +135,67 @@
             </div>
         </section>
         <!-- Plater Section end -->
+
+        <!-- Menu Section start -->
+        <section class="section" id="menu">
+            <div class="container text-center">
+                <h3 class="section-subtitle">always tasty burger</h3>
+                <h2 class="section-title">choose & enjoy</h2>
+                <p class="max-w-[1024px] mx-auto font-semibold text-c-title">Have a taste of some of our all-time best-selling burgers and enjoy a unique experience. We always prioritize our customers' well-being and strive to provide the best possible service.</p>
+                <div class="burger-swiper-container swiper h-[570px] pt-16">
+                    <div class="swiper-wrapper">
+                        <!-- Beef burger -->
+                        <article class="burger-slide swiper-slide w-[250px] sm:w-[320px] blur-md transe-ease">
+                            <div class="flex flex-col items-center mb-8">
+                                <img class="w-[170px] sm:w-[200px] md:w-[220px] mb-6" src="./src/img/burger-beff.png" alt="Beff Burger">
+                                <span class="outer-item-sh"></span>
+                            </div>
+                            <h3 class="text-[1.5rem] sm:text-[1.75rem] text-c-title mb-4 font-semibold">beff burger</h3>
+                            <p class="text-c-title mb-12">Try out our new Beef Burger with an extra layer of cheese and a new smoky beef patty.</p>
+                            <a class="btn btn-first" href="#">order now</a>
+                        </article>
+                        <!-- Lamb burger -->
+                        <article class="burger-slide swiper-slide w-[250px] sm:w-[320px] blur-md transe-ease">
+                            <div class="flex flex-col items-center mb-8">
+                                <img class="w-[170px] sm:w-[200px] md:w-[220px] mb-6" src="./src/img/burger-lamb.png" alt="Beff Burger">
+                                <span class="outer-item-sh"></span>
+                            </div>
+                            <h3 class="text-[1.5rem] sm:text-[1.75rem] text-c-title mb-4 font-semibold">Lamb burger</h3>
+                            <p class="text-c-title mb-12">Try out our Lamb Burger with cheese made from the freshest goat milk and have a taste of our latest spicy mayo.</p>
+                            <a class="btn btn-first" href="#">order now</a>
+                        </article>
+                        <!-- Chciken burger -->
+                        <article class="burger-slide swiper-slide w-[250px] sm:w-[320px] blur-md transe-ease">
+                            <div class="flex flex-col items-center mb-8">
+                                <img class="w-[170px] sm:w-[200px] md:w-[220px] mb-6" src="./src/img/burger-chicken.png" alt="Beff Burger">
+                                <span class="outer-item-sh"></span>
+                            </div>
+                            <h3 class="text-[1.5rem] sm:text-[1.75rem] text-c-title mb-4 font-semibold">chicken burger</h3>
+                            <p class="text-c-titl mb-12">Don't forget our classic chicken burger. Try it out with our new hot & spicy sauce and have a new sense of taste.</p>
+                            <a class="btn btn-first" href="#">order now</a>
+                        </article>
+                        <!-- Pork burger -->
+                        <article class="burger-slide swiper-slide w-[250px] sm:w-[320px] blur-md transe-ease">
+                            <div class="flex flex-col items-center mb-8">
+                                <img class="w-[170px] sm:w-[200px] md:w-[220px] mb-6" src="./src/img/burger-pork.png" alt="Beff Burger">
+                                <span class="outer-item-sh"></span>
+                            </div>
+                            <h3 class="text-[1.5rem] sm:text-[1.75rem] text-c-title mb-4 font-semibold">pork burger</h3>
+                            <p class="text-c-title mb-12"> New for our customers, we bring you the pork burger with a fatty pork patty. Try it out now.</p>
+                            <a class="btn btn-first" href="#">order now</a>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Menu Section end -->
     </main>
     <!-- End Main -->
 
+
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- Main JS link -->
     <script src="./src/js/main.js"></script>
 </body>

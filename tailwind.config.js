@@ -33,12 +33,11 @@ module.exports = {
     colors: {
       'transparent': 'transparent',
       'c-first': 'hsl(var(--first-color) / <alpha-value>)',
-      'c-first-alt': 'hsl(var(--first-alt-color) / <alpha-value>)',
+      'c-first-alt': 'hsl(var(--first-color-alt) / <alpha-value>)',
       'c-body': 'hsl(var(--body-color) / <alpha-value>)',
       'c-title': 'hsl(var(--title-color) / <alpha-value>)',
       'c-prime': 'hsl(var(--text-color) / <alpha-value>)',
-      'c-first': 'hsl(var(--first-color) / <alpha-value>)',
-      'c-alt-first': 'hsl(var(--alt-first-color) / <alpha-value>)',
+      'c-title-alt': 'hsl(var(--title-color-alt) / <alpha-value>)',
       "c-black": "hsl(var(--black) / <alpha-value>)",
       "c-white": "hsl(var(--white) / <alpha-value>)",
     },
@@ -58,7 +57,7 @@ module.exports = {
         // Responsive Typography
         '.fs-biggest': {fontSize:'clamp(4rem, 7vw, 7.25rem)'},
         '.fs-biggest-alt': {fontSize:'clamp(2rem, 7vw, 3.5rem)'},
-        '.fs-heading': {fontSize: 'var(--fs-heading)'},
+        '.fs-heading': {fontSize:'clamp(1.65rem, 7vw, 3.125rem)'},
         '.fs-xxl': {fontSize: 'var(--fs-xxl)'},
         '.fs-xl': {fontSize: 'var(--fs-xl)'},
         '.fs-lg': {fontSize: 'var(--fs-lg)'},
