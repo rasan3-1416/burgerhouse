@@ -49,15 +49,15 @@ function scrollHeader () {
 }
 window.addEventListener('scroll', scrollHeader)
 
-// Popurlar Swiper feature
+// Burger Swiper feature in menu section
 let burgerSwiperContainer = document.querySelector('.burger-swiper-container')
-let burgerSwiperPagination = document.querySelector('.swiper-pagination')
+let burgerSwiperPagination = document.querySelector('.burger-swiper-pagination')
 
 let popurlarSwiper = new Swiper(burgerSwiperContainer, {
     loop: true,
     slidesPerView: 'auto',
     centeredSlides: 'auto',
-    spaceBetween: 24,
+    spaceBetween: 20,
     grabCursor: true,
     pagination: {
         el: burgerSwiperPagination,
@@ -67,9 +67,40 @@ let popurlarSwiper = new Swiper(burgerSwiperContainer, {
         768: {
             slidesPerView: 2,
             spaceBetween: 30,
-        },992: {
+        },1024: {
             slidesPerView: 3,
-            spaceBetween: 46,
+            spaceBetween: 40,
+        },1250: {
+            spaceBetween: 50,
         }
+    }
+})
+
+// Read more feature
+let rmContainers = document.querySelectorAll('.rm-container')
+let rmTexts = document.querySelectorAll('.rm-text')
+let rmBtns = document.querySelectorAll('.rm-btn')
+
+rmContainers.forEach((rmContainer,index) => {
+    rmContainer.addEventListener('click', () => {
+        rmTexts[index].classList.toggle('dynamic-style')
+        let rmBtnContext = rmTexts[index].classList.contains('dynamic-style') ? '...Read Less' : '...Read More'
+        rmBtns[index].textContent = rmBtnContext
+    })
+})
+
+
+// Story Swiper feature in menu section
+let discoverSwiperContainer = document.querySelector('.discover-swiper-container')
+let discoverSwiperPagination = document.querySelector('.discover-swiper-pagination')
+
+let discoverSwiper = new Swiper(discoverSwiperContainer, {
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
+    spaceBetween: 30,
+    grabCursor: true,
+    pagination: {
+        el: discoverSwiperPagination,
+        clickable: true,
     }
 })

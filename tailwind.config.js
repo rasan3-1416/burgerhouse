@@ -46,9 +46,9 @@ module.exports = {
       'xm': {'max':'320px'},
       'sm': '576px',
       'md': '768px',
-      'lg': '992px',
-      'xl': '1024px',
-      'xxl': '1300px',
+      'lg': '1024px',
+      'xl': '1280px',
+      'xxl': '1350px',
     },
   },
   plugins: [
@@ -57,14 +57,16 @@ module.exports = {
         // Responsive Typography
         '.fs-biggest': {fontSize:'clamp(4rem, 7vw, 7.25rem)'},
         '.fs-biggest-alt': {fontSize:'clamp(2rem, 7vw, 3.5rem)'},
-        '.fs-heading': {fontSize:'clamp(1.65rem, 7vw, 3.125rem)'},
-        '.fs-xxl': {fontSize: 'var(--fs-xxl)'},
-        '.fs-xl': {fontSize: 'var(--fs-xl)'},
-        '.fs-lg': {fontSize: 'var(--fs-lg)'},
-        '.fs-md': {fontSize: 'var(--fs-md)'},
-        '.fs-sm': {fontSize: 'var(--fs-sm)'},
-        '.fs-xm': {fontSize: 'var(--fs-xm)'},
-        '.fs-xxm': {fontSize: 'var(--fs-xxm)'},
+        '.fs-heading': {fontSize:'clamp(1.75rem, 7vw, 3.125rem)'},
+        '.fs-heading-alt': {fontSize:'clamp(1.65rem, 6vw, 2.75rem)'},
+        '.fs-xxxl': {fontSize:'clamp(1.5rem, 7vw, 2.5rem)'},
+        '.fs-xxl': {fontSize:'clamp(1.25rem, 7vw, 2rem)'},
+        '.fs-xl': {fontSize:'clamp(1rem, 7vw, 1.5rem)'},
+        '.fs-lg': {fontSize:'clamp(0.875rem, 7vw, 1.25rem)'},
+        '.fs-md': {fontSize:'clamp(0.8125rem, 7vw, 1rem)'},
+        '.fs-sm': {fontSize:'clamp(0.75rem, 7vw, 0.875rem)'},
+        '.fs-xm': {fontSize:'clamp(0.65rem, 7vw, 0.8125rem)'},
+        '.fs-xxm': {fontSize:'clamp(0.5rem, 7vw, 0.75rem)'},
         // Responsive Header Height
         '.h-header': {height: 'var(--header-height)', '@screen md': {height: 'calc(var(--header-height) + 2.5rem)'}},
         // Custom Transition
@@ -79,10 +81,10 @@ module.exports = {
       addComponents({
         // Custom Container Styles
         '.container': {
-          maxWidth: '1300px', paddingLeft: '1.5rem', paddingRight: '1.5rem',
+          maxWidth: '1350px', paddingLeft: '1.5rem', paddingRight: '1.5rem',
           '@screen md': {paddingLeft: '2rem', paddingRight: '2rem'},
-          '@screen lg': {paddingLeft: '2.5rem', paddingRight: '2.5rem'},
-          '@screen xl': {paddingLeft: '3rem', paddingRight: '3rem'},
+          '@screen lg': {paddingLeft: '3rem', paddingRight: '3rem'},
+          '@screen xl': {paddingLeft: '4rem', paddingRight: '4rem'},
           '@screen xxl': {marginLeft: 'auto', marginRight: 'auto'},
         },
         // Custom Utility Classes

@@ -32,7 +32,7 @@
                             <img class="logo" src="./src/img/logo.png" alt="Burger Week logo">
                         </a>
                     </div>
-                    <div class="flex flex-col font-bebas text-[1.5rem]">
+                    <div class="flex flex-col text-[1.5rem]">
                         <a class="py-3 text-c-title group transe-ease hover:text-c-first-alt hover:bg-c-black/10" href="#home">
                             <span class="inline-block transe-ease group-hover:translate-x-4">Home</span>
                         </a>
@@ -61,7 +61,7 @@
                     <span class="font-bold text-[0.875rem] text-c-title">Express Delivery +1 234 567 890</span>
                 </div>
 
-                <div class="font-bebas text-[1.5rem] text-c-title flex gap-x-9">
+                <div class="text-[1.5rem] text-c-title flex gap-x-9">
                     <a class="transe-ease hover:text-c-first-alt" href="#home">Home</a>
                     <a class="transe-ease hover:text-c-first-alt" href="#menu">Menu</a>
                     <a class="transe-ease hover:text-c-first-alt" href="#our-story">Our Story</a>
@@ -71,7 +71,7 @@
             <!-- Desktop Menu end -->
 
             <!-- Hamburger Menu Icon -->
-            <button class="md:hidden hamburger-btn z-[55]" id="hamburger-btn">
+            <button class="md:hidden hamburger-btn" id="hamburger-btn">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -86,7 +86,7 @@
     <!-- start Main -->
     <main class="overflow-hidden">
         <!-- start Home -->
-        <section class="section md:pt-0 md:pb-0 md:h-[100vh] bg-home bg-no-repeat bg-cover" id="home">
+        <section class="section md:pt-0 md:h-[100vh] bg-home bg-no-repeat bg-cover" id="home">
             <div class="container md:h-full md:flex md:items-center md:justify-between">
                 <div class="pt-24 md:pt-0">
                     <span class="uppercase text-[0.875rem] xm:text-[0.6rem] md:text-[1rem] lg:text-[1.25rem] font-bebas tracking-wider font-semibold text-c-title inline-block mb-4 xm:mb-2 md:mb-6 xxl:mb-8 p-2 xm:p-1 lg:p-3 border border-dashed border-c-title">
@@ -98,7 +98,7 @@
                     </h1>
                 </div>
                 <div class="flex justify-center pb-8 md:pb-0">
-                    <img class="w-[400px] sm:w-[450px] md:w-[600px] lg:w-[650px]" src="./src/img/home_banner-1.png" alt="Home Banner">
+                    <img class="w-[400px] md:w-[380px] lg:w-[500px] xl:w-[600px]" src="./src/img/home_banner-1.png" alt="Home Banner">
                 </div>
             </div>
         </section>
@@ -110,24 +110,24 @@
                 <div class="grid gap-4 md:grid-cols-2">
                     <!-- Plater - 1 -->
                     <div class="group h-[150px] md:h-full bg-plater-1 bg-no-repeat bg-cover bg-center rounded-md overflow-hidden dark-overlay hover:after:invisible hover:after:opacity-0">
-                        <div class="absolute top-4 left-4 z-10 uppercase text-c-white transe-ease group-hover:text-c-first-alt">
-                            <span class="fs-md inline-block font-medium mb-2">try it today</span>
-                            <h3 class="fs-xxl font-semibold">most popurlar burger</h3>
+                        <div class="absolute top-4 left-4 md:top-8 md:left-8 z-10 uppercase text-c-white transe-ease group-hover:text-c-first-alt">
+                            <span class="fs-xl inline-block font-bebas mb-2">try it today</span>
+                            <h3 class="fs-xxl">most popurlar burger</h3>
                         </div>
                     </div>
                     <div class="grid gap-y-4">
                         <!-- Plater - 2 -->
-                        <div class="group h-[150px] bg-plater-2 bg-no-repeat bg-cover bg-center rounded-md overflow-hidden dark-overlay hover:after:invisible hover:after:opacity-0">
-                            <div class="absolute top-4 left-4 z-10 uppercase text-c-white transe-ease group-hover:text-c-first-alt">
-                                <span class="fs-md inline-block font-medium mb-2">try it today</span>
-                                <h3 class="fs-xxl font-semibold">more fun more taste</h3>
+                        <div class="group h-[150px] md:h-[200px] bg-plater-2 bg-no-repeat bg-cover bg-center rounded-md overflow-hidden dark-overlay hover:after:invisible hover:after:opacity-0">
+                            <div class="absolute top-4 left-4 md:top-8 md:left-8 z-10 uppercase text-c-white transe-ease group-hover:text-c-first-alt">
+                                <span class="fs-xl inline-block font-bebas mb-2">try it today</span>
+                                <h3 class="fs-xxl">more fun more taste</h3>
                             </div>
                         </div>
                         <!-- Plater - 3 -->
-                        <div class="group h-[150px] bg-plater-3 bg-no-repeat bg-cover bg-center rounded-md overflow-hidden dark-overlay hover:after:invisible hover:after:opacity-0">
-                            <div class="absolute top-4 left-4 z-10 uppercase text-c-white transe-ease group-hover:text-c-first-alt">
-                                <span class="fs-md inline-block font-medium mb-2">try it today</span>
-                                <h3 class="fs-xxl font-semibold">fresh & chili</h3>
+                        <div class="group h-[150px] md:h-[200px] bg-plater-3 bg-no-repeat bg-cover bg-center rounded-md overflow-hidden dark-overlay hover:after:invisible hover:after:opacity-0">
+                            <div class="absolute top-4 left-4 md:top-8 md:left-8 z-10 uppercase text-c-white transe-ease group-hover:text-c-first-alt">
+                                <span class="fs-xl inline-block font-bebas mb-2">try it today</span>
+                                <h3 class="fs-xxl">fresh & chili</h3>
                             </div>
                         </div>
                     </div>
@@ -139,57 +139,132 @@
         <!-- Menu Section start -->
         <section class="section" id="menu">
             <div class="container text-center">
-                <h3 class="section-subtitle">always tasty burger</h3>
+                <h3 class="sec-subtl subtl-first">always tasty burger</h3>
                 <h2 class="section-title">choose & enjoy</h2>
                 <p class="max-w-[1024px] mx-auto font-semibold text-c-title">Have a taste of some of our all-time best-selling burgers and enjoy a unique experience. We always prioritize our customers' well-being and strive to provide the best possible service.</p>
-                <div class="burger-swiper-container swiper h-[570px] pt-16">
+                <div class="burger-swiper-container swiper py-16 md:pb-20">
                     <div class="swiper-wrapper">
-                        <!-- Beef burger -->
-                        <article class="burger-slide swiper-slide w-[250px] sm:w-[320px] blur-md transe-ease">
-                            <div class="flex flex-col items-center mb-8">
-                                <img class="w-[170px] sm:w-[200px] md:w-[220px] mb-6" src="./src/img/burger-beff.png" alt="Beff Burger">
+                        <!-- 1. Beef burger -->
+                        <article class="swiper-slide w-[300px] h-[420px] sm:w-[350px] sm:h-[440px] md:w-[420px] md:h-[460px] flex flex-col justify-between">
+                            <div class="flex flex-col items-center">
+                                <img class="w-[200px] sm:w-[220px] md:w-[240px] lg:w-[250px] mb-6" src="./src/img/burger-beff.png" alt="Beff Burger">
                                 <span class="outer-item-sh"></span>
                             </div>
-                            <h3 class="text-[1.5rem] sm:text-[1.75rem] text-c-title mb-4 font-semibold">beff burger</h3>
-                            <p class="text-c-title mb-12">Try out our new Beef Burger with an extra layer of cheese and a new smoky beef patty.</p>
-                            <a class="btn btn-first" href="#">order now</a>
+                            <div>
+                                <h3 class="fs-xxl text-c-title mb-4 font-semibold">beff burger</h3>
+                                <p class="text-c-title px-2 max-w-[350px] md:mx-auto">Try out our new Beef Burger with an extra layer of cheese and a new smoky beef patty.</p>
+                            </div>
+                            <div class="flex justify-center">
+                                <a class="btn btn-first" href="#">order now</a>
+                            </div>
                         </article>
-                        <!-- Lamb burger -->
-                        <article class="burger-slide swiper-slide w-[250px] sm:w-[320px] blur-md transe-ease">
-                            <div class="flex flex-col items-center mb-8">
-                                <img class="w-[170px] sm:w-[200px] md:w-[220px] mb-6" src="./src/img/burger-lamb.png" alt="Beff Burger">
+                        <!-- 2. Lamb burger -->
+                        <article class="swiper-slide w-[300px] h-[420px] sm:w-[350px] sm:h-[440px] md:w-[420px] md:h-[460px] flex flex-col justify-between">
+                            <div class="flex flex-col items-center">
+                                <img class="w-[200px] sm:w-[220px] md:w-[240px] lg:w-[250px] mb-6" src="./src/img/burger-lamb.png" alt="Beff Burger">
                                 <span class="outer-item-sh"></span>
                             </div>
-                            <h3 class="text-[1.5rem] sm:text-[1.75rem] text-c-title mb-4 font-semibold">Lamb burger</h3>
-                            <p class="text-c-title mb-12">Try out our Lamb Burger with cheese made from the freshest goat milk and have a taste of our latest spicy mayo.</p>
-                            <a class="btn btn-first" href="#">order now</a>
+                            <div>
+                                <h3 class="fs-xxl text-c-title mb-4 font-semibold">Lamb burger</h3>
+                                <p class="text-c-title px-2 max-w-[350px] md:mx-auto">Try out our Lamb Burger with cheese made from the freshest goat milk.</div>
+                            <div class="flex justify-center">
+                                <a class="btn btn-first" href="#">order now</a>
+                            </div>
                         </article>
-                        <!-- Chciken burger -->
-                        <article class="burger-slide swiper-slide w-[250px] sm:w-[320px] blur-md transe-ease">
-                            <div class="flex flex-col items-center mb-8">
-                                <img class="w-[170px] sm:w-[200px] md:w-[220px] mb-6" src="./src/img/burger-chicken.png" alt="Beff Burger">
+                        <!-- 3. Chciken burger -->
+                        <article class="swiper-slide w-[300px] h-[420px] sm:w-[350px] sm:h-[440px] md:w-[420px] md:h-[460px] flex flex-col justify-between">
+                            <div class="flex flex-col items-center">
+                                <img class="w-[200px] sm:w-[220px] md:w-[240px] lg:w-[250px] mb-6" src="./src/img/burger-chicken.png" alt="Beff Burger">
                                 <span class="outer-item-sh"></span>
                             </div>
-                            <h3 class="text-[1.5rem] sm:text-[1.75rem] text-c-title mb-4 font-semibold">chicken burger</h3>
-                            <p class="text-c-titl mb-12">Don't forget our classic chicken burger. Try it out with our new hot & spicy sauce and have a new sense of taste.</p>
-                            <a class="btn btn-first" href="#">order now</a>
+                            <div>
+                                <h3 class="fs-xxl text-c-title mb-4 font-semibold">chicken burger</h3>
+                                <p class="text-c-title px-2 max-w-[350px] md:mx-auto">Don't forget our classic chicken burger. Try it out with our new hot & spicy.
+                            </div>
+                            <div class="flex justify-center">
+                                <a class="btn btn-first" href="#">order now</a>
+                            </div>
                         </article>
-                        <!-- Pork burger -->
-                        <article class="burger-slide swiper-slide w-[250px] sm:w-[320px] blur-md transe-ease">
-                            <div class="flex flex-col items-center mb-8">
-                                <img class="w-[170px] sm:w-[200px] md:w-[220px] mb-6" src="./src/img/burger-pork.png" alt="Beff Burger">
+                        <!-- 4. Pork burger -->
+                        <article class="swiper-slide w-[300px] h-[420px] sm:w-[350px] sm:h-[440px] md:w-[420px] md:h-[460px] flex flex-col justify-between">
+                            <div class="flex flex-col items-center">
+                                <img class="w-[200px] sm:w-[220px] md:w-[240px] lg:w-[250px] mb-6" src="./src/img/burger-pork.png" alt="Beff Burger">
                                 <span class="outer-item-sh"></span>
                             </div>
-                            <h3 class="text-[1.5rem] sm:text-[1.75rem] text-c-title mb-4 font-semibold">pork burger</h3>
-                            <p class="text-c-title mb-12"> New for our customers, we bring you the pork burger with a fatty pork patty. Try it out now.</p>
-                            <a class="btn btn-first" href="#">order now</a>
+                            <div>
+                                <h3 class="fs-xxl text-c-title mb-4 font-semibold">pork burger</h3>
+                                <p class="text-c-title px-2 max-w-[350px] md:mx-auto"> New for our customers, we bring you the pork burger with a fatty pork patty. Try it out now.</p>
+                            </div>
+                            <div class="flex justify-center">
+                                <a class="btn btn-first" href="#">order now</a>
+                            </div>
                         </article>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="burger-swiper-pagination swiper-pagination"></div>
                 </div>
             </div>
         </section>
         <!-- Menu Section end -->
+
+        <!-- Story section start -->
+        <section class="section">
+            <div class="container">
+                <div class="discover-swiper-container swiper shadow-2xl">
+                    <div class="swiper-wrapper pb-8 md:pb-0">
+                        <article class="swiper-slide p-4 sm:px-6 sm:py-5 lg:px-8 lg:py-7 grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
+                            <div class="">
+                                <h3 class="sec-subtl subtl-second">discover</h3>
+                                <h2 class="section-title-alt">upcoming events</h2>
+                                <p class="rm-container cursor-pointer md:pb-8 lg:pb-0">
+                                    Have a taste of some of our all-time best-selling burgers and enjoy a unique experience.
+                                    <span class="rm-text hidden dynamic-style:inline">
+                                        We always prioritize our customers' well-being and strive to provide the best possible service. Hope for your upcoming for having the greatest expereince ever.
+                                    </span>
+                                    <span class="rm-btn">...Read More</span>
+                                </p>
+                            </div>
+                            <div class="flex justify-center md:justify-end md:items-center lg:items-start">
+                                <img class="w-[450px] sm:w-[500px] md:w-[550px] lg:w-[600px] h-fit" src="./src/img/story-img-1.jpg" alt="Story View 1">
+                            </div>
+                        </article>
+                        <article class="swiper-slide p-4 sm:px-6 sm:py-5 lg:px-8 lg:py-7 grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
+                            <div class="">
+                                <h3 class="sec-subtl subtl-second">discover</h3>
+                                <h2 class="section-title-alt">upcoming events</h2>
+                                <p class="rm-container cursor-pointer md:pb-8 lg:pb-0">
+                                    Have a taste of some of our all-time best-selling burgers and enjoy a unique experience.
+                                    <span class="rm-text hidden dynamic-style:inline">
+                                        We always prioritize our customers' well-being and strive to provide the best possible service. Hope for your upcoming for having the greatest expereince ever.
+                                    </span>
+                                    <span class="rm-btn">...Read More</span>
+                                </p>
+                            </div>
+                            <div class="flex justify-center md:justify-end md:items-center lg:items-start">
+                                <img class="w-[450px] sm:w-[500px] md:w-[550px] lg:w-[600px] h-fit" src="./src/img/story-img-2.jpg" alt="Story View 1">
+                            </div>
+                        </article>
+                        <article class="swiper-slide p-4 sm:px-6 sm:py-5 lg:px-8 lg:py-7 grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
+                            <div class="">
+                                <h3 class="sec-subtl subtl-second">discover</h3>
+                                <h2 class="section-title-alt">upcoming events</h2>
+                                <p class="rm-container cursor-pointer md:pb-8 lg:pb-0">
+                                    Have a taste of some of our all-time best-selling burgers and enjoy a unique experience.
+                                    <span class="rm-text hidden dynamic-style:inline">
+                                        We always prioritize our customers' well-being and strive to provide the best possible service. Hope for your upcoming for having the greatest expereince ever.
+                                    </span>
+                                    <span class="rm-btn">...Read More</span>
+                                </p>
+                            </div>
+                            <div class="flex justify-center md:justify-end md:items-center lg:items-start">
+                                <img class="w-[450px] sm:w-[500px] md:w-[550px] lg:w-[600px] h-fit" src="./src/img/story-img-3.jpg" alt="Story View 1">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="discover-swiper-pagination swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Story section end -->
     </main>
     <!-- End Main -->
 

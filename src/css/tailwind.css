@@ -20,7 +20,7 @@
         --black: 0 0% 0%;
         --white: 0 0% 100%;
         /* Responsive Typography */
-        --fs-xxl: 1.25rem;
+        /* --fs-xxl: 1.25rem;
         --fs-xl: 1.125rem;
         --fs-lg: 1rem;
         --fs-md: 0.875rem;
@@ -44,7 +44,7 @@
             --fs-sm: 0.875rem;
             --fs-xm: 0.8125rem;
             --fs-xxm: 0.75rem;
-        }
+        } */
         body,input,textarea {
             @apply font-mont;
         }
@@ -55,7 +55,10 @@
             @apply font-alfa text-c-title font-bold uppercase
         }
         h3,h4,a {
-            @apply uppercase
+            @apply font-bebas uppercase tracking-wider
+        }
+        a.btn {
+            @apply font-alfa tracking-wider
         }
     }
 }
@@ -66,7 +69,7 @@
         @apply w-[140px] xm:w-[110px] sm:w-[160px] md:w-[200px]
     }
     .hamburger-btn {
-        @apply grid gap-y-1 transe-ease-l;
+        @apply z-[55] grid gap-y-1 transe-ease-l;
         span {
             @apply block w-[30px] h-[3px] xm:w-[22px] bg-c-title transe-ease-l;
         }
@@ -89,21 +92,33 @@
     .section {
         @apply pt-16 pb-4 lg:pt-24 xl:pt-32 xl:pb-8;
     }
-    .section-subtitle {
-        @apply inline-block fs-sm font-bold text-c-title py-2 px-3 xm:py-1 xm:px-2 bg-c-first mb-5 xm:mb-3 sm:mb-8 md:mb-10
+    .sec-subtl {
+        @apply inline-block font-semibold text-c-title;
+    }
+    .subtl-first {
+        @apply fs-lg py-2 px-3 xm:py-1 xm:px-2 bg-c-first mb-5 xm:mb-3 sm:mb-8 md:mb-12;
+    }
+    .subtl-second {
+        @apply fs-xl mb-3 sm:mb-4
     }
     .section-title {
         @apply fs-heading xm:text-[1.35rem] mb-6 sm:mb-8 lg:mb-10
     }
+    .section-title-alt {
+        @apply fs-heading-alt xm:text-[1.35rem] mb-6 sm:mb-8 lg:mb-10 leading-10
+    }
     /* Btn Styles */
     .btn {
-        @apply px-5 py-4 fs-lg font-alfa font-bold tracking-wider transe-ease
+        @apply inline-block px-4 py-3 fs-md font-bold tracking-wider transe-ease;
     }
     .btn-first {
         @apply text-c-body bg-c-first-alt;
         &:hover {
-            @apply bg-c-first text-c-first-alt
-        }
+            @apply bg-c-first text-c-first-alt;
+        };
+    };
+    .rm-btn {
+        @apply font-bebas text-c-title
     }
     /* Shadow Classes */
     .text-solid-sh {
@@ -124,15 +139,14 @@
 @layer utilities {}
 
 
-/* Burger Swiper Slider Styles */
+/* Swiper Slider Styles */
 .swiper-pagination-bullet {
     @apply w-[10px] h-[10px];
 }
 .swiper-pagination-bullet-active {
-@apply bg-c-first
+    @apply bg-c-first
 }
-
-.swiper-slide-active,
-.swiper-slide-duplicate-active {
-  @apply blur-0 scale-110 !important
+/* Discover Swiper Slider Styles */
+.discover-swiper-pagination.swiper-pagination-horizontal {
+    @apply bottom-[15px] left-0 w-full md:w-fit md:bottom-[20px] md:left-[20px] lg:bottom-[25px] lg:left-[30px]
 }
