@@ -55,10 +55,25 @@
             @apply font-alfa text-c-title font-bold uppercase
         }
         h3,h4,a {
-            @apply font-bebas uppercase tracking-wider
+            @apply font-bebas uppercase tracking-widest
         }
-        a.btn {
-            @apply font-alfa tracking-wider
+        a.btn, input.btn {
+            @apply font-alfa uppercase tracking-widest
+        }
+        input {
+            @apply fs-md lg:fs-lg;
+            &[type=submit] {
+                @apply cursor-pointer;
+            }
+        }
+        input::-webkit-input-placeholder {
+            @apply font-bebas text-c-prime capitalize
+        }
+        input::-ms-input-placeholder {
+            @apply font-bebas text-c-prime capitalize
+        }
+        input::-moz-placeholder {
+            @apply font-bebas text-c-prime capitalize
         }
     }
 }
@@ -66,7 +81,7 @@
 @layer components {
     /* Reusable Classes */
     .logo {
-        @apply w-[140px] xm:w-[110px] sm:w-[160px] md:w-[200px]
+        @apply w-[140px] xm:w-[110px] sm:w-[160px] lg:w-[200px]
     }
     .hamburger-btn {
         @apply z-[55] grid gap-y-1 transe-ease-l;
@@ -96,20 +111,20 @@
         @apply inline-block font-semibold text-c-title;
     }
     .subtl-first {
-        @apply fs-lg py-2 px-3 xm:py-1 xm:px-2 bg-c-first mb-5 xm:mb-3 sm:mb-8 md:mb-12;
+        @apply table mx-auto fs-lg py-2 px-3 xm:py-1 xm:px-2 bg-c-first mb-5 xm:mb-3 sm:mb-8 md:mb-12;
     }
     .subtl-second {
-        @apply fs-xl mb-3 sm:mb-4
+        @apply fs-xl mb-3 sm:mb-4 md:mb-6 xl:mb-8 block text-center
     }
     .section-title {
-        @apply fs-heading xm:text-[1.35rem] mb-6 sm:mb-8 lg:mb-10
+        @apply fs-heading xm:text-[1.35rem] mb-6 sm:mb-8 lg:mb-10 text-center
     }
     .section-title-alt {
         @apply fs-heading-alt xm:text-[1.35rem] mb-6 sm:mb-8 lg:mb-10 leading-10
     }
     /* Btn Styles */
     .btn {
-        @apply inline-block px-4 py-3 fs-md font-bold tracking-wider transe-ease;
+        @apply inline-block px-4 py-3 fs-md font-bold transe-ease;
     }
     .btn-first {
         @apply text-c-body bg-c-first-alt;
@@ -117,9 +132,6 @@
             @apply bg-c-first text-c-first-alt;
         };
     };
-    .rm-btn {
-        @apply font-bebas text-c-title
-    }
     /* Shadow Classes */
     .text-solid-sh {
         text-shadow: 4px 3px 0 hsl(var(--title-color-alt));
@@ -136,7 +148,9 @@
     }
 }
 
-@layer utilities {}
+@layer utilities {
+
+}
 
 
 /* Swiper Slider Styles */

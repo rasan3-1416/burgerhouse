@@ -63,7 +63,7 @@
 
                 <div class="text-[1.5rem] text-c-title flex gap-x-9">
                     <a class="transe-ease hover:text-c-first-alt" href="#home">Home</a>
-                    <a class="transe-ease hover:text-c-first-alt" href="#menu">Menu</a>
+                    <a class="transe-ease hover:text-c-first-alt" href="#food-menu">Menu</a>
                     <a class="transe-ease hover:text-c-first-alt" href="#our-story">Our Story</a>
                     <a class="transe-ease hover:text-c-first-alt" href="#contact-us">Contact Us</a>
                 </div>
@@ -137,7 +137,7 @@
         <!-- Plater Section end -->
 
         <!-- Menu Section start -->
-        <section class="section" id="menu">
+        <section class="section" id="food-menu">
             <div class="container text-center">
                 <h3 class="sec-subtl subtl-first">always tasty burger</h3>
                 <h2 class="section-title">choose & enjoy</h2>
@@ -206,14 +206,14 @@
         </section>
         <!-- Menu Section end -->
 
-        <!-- Story section start -->
-        <section class="section">
+        <!-- Our Story section start -->
+        <section class="section" id="our-story">
             <div class="container">
                 <div class="discover-swiper-container swiper shadow-2xl">
                     <div class="swiper-wrapper pb-8 md:pb-0">
                         <article class="swiper-slide p-4 sm:px-6 sm:py-5 lg:px-8 lg:py-7 grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
                             <div class="">
-                                <h3 class="sec-subtl subtl-second">discover</h3>
+                                <h3 class="sec-subtl subtl-second text-start md:mb-4 lg:mb-4">discover</h3>
                                 <h2 class="section-title-alt">upcoming events</h2>
                                 <p class="rm-container cursor-pointer md:pb-8 lg:pb-0">
                                     Have a taste of some of our all-time best-selling burgers and enjoy a unique experience.
@@ -229,7 +229,7 @@
                         </article>
                         <article class="swiper-slide p-4 sm:px-6 sm:py-5 lg:px-8 lg:py-7 grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
                             <div class="">
-                                <h3 class="sec-subtl subtl-second">discover</h3>
+                                <h3 class="sec-subtl subtl-second text-start md:mb-4 lg:mb-4">discover</h3>
                                 <h2 class="section-title-alt">upcoming events</h2>
                                 <p class="rm-container cursor-pointer md:pb-8 lg:pb-0">
                                     Have a taste of some of our all-time best-selling burgers and enjoy a unique experience.
@@ -245,7 +245,7 @@
                         </article>
                         <article class="swiper-slide p-4 sm:px-6 sm:py-5 lg:px-8 lg:py-7 grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
                             <div class="">
-                                <h3 class="sec-subtl subtl-second">discover</h3>
+                                <h3 class="sec-subtl subtl-second text-start md:mb-4 lg:mb-4">discover</h3>
                                 <h2 class="section-title-alt">upcoming events</h2>
                                 <p class="rm-container cursor-pointer md:pb-8 lg:pb-0">
                                     Have a taste of some of our all-time best-selling burgers and enjoy a unique experience.
@@ -264,7 +264,35 @@
                 </div>
             </div>
         </section>
-        <!-- Story section end -->
+        <!-- Our Story section end -->
+
+        <!-- Contact section start -->
+        <section class="section" id="contact-us">
+            <div class="container relative">
+                <img class="absolute top-0 left-[-10px] w-[130px] sm:w-[150px] drop-shadow-3xl" src="./src/img/reservation-el-burger.png" alt="Burger El img">
+                <img class="absolute bottom-0 right-[-100px] sm:right-[-110px] md:right-[-125px] lg:bottom-[-20px] w-[200px] sm:w-[220px] md:w-[250px] dro" src="./src/img/reservation-el-plater.png" alt="Plater El img">
+                <h3 class="relative sec-subtl subtl-second">reservation</h3>
+                <h2 class="relative section-title">book your table</h2>
+                <form class="relative w-[270px] sm:w-[350px] md:w-[380px] lg:w-[780px] mx-auto py-12 lg:pt-20" action="">
+                    <img class="absolute top-[20%] left-[-30px] sm:left-[-80px] md:left-[-120px] lg:left-[-100px] xl:left-[-140px] w-[60px] drop-shadow-3xl" src="./src/img/reservation-el-bottle.png" alt="Bottle El img">
+                    <div class="relative">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+                            <input class="border-[1.5px] border-solid border-c-prime px-2 py-3 lg:px-3 lg:py-4 rounded-md bg-c-body/50" placeholder="NAME" type="text">
+                            <input class="border-[1.5px] border-solid border-c-prime px-2 py-3 lg:px-3 lg:py-4 rounded-md bg-c-body/50" placeholder="EMAIL" type="email">
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+                            <input class="border-[1.5px] border-solid border-c-prime px-2 py-3 lg:px-3 lg:py-4 rounded-md bg-c-body/50" placeholder="date" type="text">
+                            <input class="border-[1.5px] border-solid border-c-prime px-2 py-3 lg:px-3 lg:py-4 rounded-md bg-c-body/50" placeholder="time" type="email">
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <input class="border-[1.5px] border-solid border-c-prime px-2 py-3 lg:px-3 lg:py-4 rounded-md bg-c-body/50" placeholder="people" type="text">
+                            <input class="btn btn-first rounded-md" value="find a table" type="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Contact section end -->
     </main>
     <!-- End Main -->
 
