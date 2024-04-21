@@ -56,8 +56,8 @@ let burgerSwiperPagination = document.querySelector('.burger-swiper-pagination')
 let popurlarSwiper = new Swiper(burgerSwiperContainer, {
     loop: true,
     slidesPerView: 'auto',
-    centeredSlides: 'auto',
-    spaceBetween: 20,
+    // centeredSlides: 'true',
+    // spaceBetween: 20,
     grabCursor: true,
     pagination: {
         el: burgerSwiperPagination,
@@ -66,12 +66,13 @@ let popurlarSwiper = new Swiper(burgerSwiperContainer, {
     breakpoints: {
         768: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            // spaceBetween: 30,
         },1024: {
+            centeredSlides: 'true',
             slidesPerView: 3,
-            spaceBetween: 40,
+            // spaceBetween: 40,
         },1250: {
-            spaceBetween: 50,
+            // spaceBetween: 50,
         }
     }
 })

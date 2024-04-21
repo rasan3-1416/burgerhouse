@@ -17,6 +17,7 @@ module.exports = {
       // Background images URL
       backgroundImage: {
         'home': "url('../../src/img/home-bg.png')",
+        'footer': "url('../../src/img/footer-bg.jpg')",
         'plater-1': "url('../../src/img/plater-1.jpg')",
         'plater-2': "url('../../src/img/plater-2.jpg')",
         'plater-3': "url('../../src/img/plater-3.jpg')",
@@ -76,7 +77,11 @@ module.exports = {
         '.fs-xm': {fontSize:'clamp(0.65rem, 7vw, 0.8125rem)'},
         '.fs-xxm': {fontSize:'clamp(0.5rem, 7vw, 0.75rem)'},
         // Responsive Header Height
-        '.h-header': {height: 'var(--header-height)', '@screen md': {height: 'calc(var(--header-height) + 2.5rem)'}},
+        '.h-header': {
+          height: 'var(--header-height)',
+          '@screen xm': {height: 'calc(var(--header-height) - 0.5rem)'},
+          '@screen md': {height: 'calc(var(--header-height) + 2.5rem)'}
+        },
         // Custom Transition
         '.transe-ease': {transition: '0.3s ease-in-out'},
         '.transe-ease-l': {transition: '0.4s ease-in-out'}

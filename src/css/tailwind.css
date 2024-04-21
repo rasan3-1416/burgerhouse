@@ -84,20 +84,20 @@
         @apply w-[140px] xm:w-[110px] sm:w-[160px] lg:w-[200px]
     }
     .hamburger-btn {
-        @apply z-[55] grid gap-y-1 transe-ease-l;
+        @apply w-[30px] h-[30px] z-[55] flex flex-col justify-center items-center gap-y-1 transe-ease-l;
         span {
             @apply block w-[30px] h-[3px] xm:w-[22px] bg-c-title transe-ease-l;
         }
         &.dynamic-style {
             span {
                 &:nth-child(2) {
-                    @apply hidden;
+                    @apply translate-x-[30px] opacity-0 invisible;
                 }
                 &:nth-child(1) {
-                    transform: rotate(-45deg) translate(-4.5px,0px);
+                    transform: rotate(-45deg) translate(-5px,5px);
                 }
                 &:nth-child(3) {
-                    transform: rotate(45deg) translate(-4.5px,0px);
+                    transform: rotate(45deg) translate(-4.5px,-4px);
                 }
             }
         }
